@@ -1,0 +1,33 @@
+{
+    "name" : "repo",
+    "jndiName" : "",
+    "workspaces" : {
+        "predefined" : ["default"],
+        "default" : "default",
+        "allowCreation" : true,
+        "cacheSize" : 10000
+    },
+    "storage" : {
+        "persistence": {
+            "type": "file",
+            "path" : "target/test-classes/fcrepo4-data/fcrepo.object.directory"
+        },
+        "binaryStorage" : {
+            "type" : "file",
+            "directory" : "target/test-classes/fcrepo4-data/fcrepo.binary.directory",
+            "minimumBinarySizeInBytes" : 4096
+        }
+    },
+    "security" : {
+        "anonymous" : {
+            "roles" : ["readonly","readwrite","admin"],
+            "useOnFailedLogin" : false
+        }
+    },
+    "garbageCollection" : {
+        "threadPool" : "modeshape-gc",
+        "initialTime" : "00:00",
+        "intervalInHours" : 24
+    },
+    "node-types" : ["fedora-node-types.cnd"]
+}
