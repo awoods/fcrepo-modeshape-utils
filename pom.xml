@@ -46,6 +46,7 @@
     <slf4j.version>1.7.10</slf4j.version>
     <javax.ws.rs.version>2.0.1</javax.ws.rs.version>
     <shade.plugin.version>2.4.3</shade.plugin.version>
+    <postgresql.version>9.4.1211</postgresql.version>
   </properties>
 
   <scm>
@@ -216,6 +217,12 @@
       <artifactId>commons-io</artifactId>
       <version>${commons.io.version}</version>
       <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>${postgresql.version}</version>
     </dependency>
 
   </dependencies>
