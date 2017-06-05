@@ -10,15 +10,19 @@ That way, the resources of a repository that contains significant amounts of con
 
 ## Usage Examples
 
-Backing up a repository:
+1. Stop your running Fedora repository
+
+2. Backing up a repository:
 ```java
 java -jar fcrepo-modeshape-utils.jar /path/to/repository.json /directory/of/backup b
 ```
 
-Restoring up a repository:
+3. Restoring a repository:
 ```java
 java -jar fcrepo-modeshape-utils.jar /path/to/repository.json /directory/of/backup r
 ```
+
+4. Start your running Fedora repository
 
 ### Notes
 The repository.json file should define the paths to objects and binary directories:
