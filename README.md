@@ -34,4 +34,4 @@ Additionally, since no Fedora libraries are included, the Fedora-specific securi
 
 Current Release
 ---------------
-* [0.1.0](https://github.com/awoods/fcrepo-modeshape-utils/releases/tag/fcrepo-modeshape-utils-0.1.0)
+* [0.2.0](https://github.com/awoods/fcrepo-modeshape-utils/releases/tag/fcrepo-modeshape-utils-0.2.0)
